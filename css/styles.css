@@ -427,7 +427,7 @@ h1 {
   text-align: center; }
 
 .dropbtn {
-  background-color: #f2e6d9;
+  background: none;
   border: none;
   font-size: 18px;
   font-family: 'Amatic SC', 'Clicker Script', 'Jacques Francois Shadow', 'Rye', 'Sail', 'Stalemate', cursive;
@@ -499,5 +499,12 @@ header {
 
 .rosie-pic {
   transition: box-shadow .2s ease-out; }
+
+.dropdown-content > a,
+.dropbtn {
+  transition: all .2s; }
+  .dropdown-content > a:hover,
+  .dropbtn:hover {
+    transform: scale(1.08) translateX(2%); }
 
 /*# sourceMappingURL=styles.css.map */

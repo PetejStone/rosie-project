@@ -30,3 +30,11 @@
 .rosie-pic {
   transition: box-shadow .2s ease-out;
 }
+
+.dropdown-content > a,
+.dropbtn {
+  transition: all .2s;
+  &:hover {
+    transform: scale(1.08) translateX(2%);
+  }
+}

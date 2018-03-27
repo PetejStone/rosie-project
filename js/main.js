@@ -15,6 +15,7 @@ window.onclick = function(e) {
     const myDropdownAbout = document.getElementById("myDropdownAbout");
       if (myDropdownAbout.classList.contains('showAbout')) {
         myDropdownAbout.classList.remove('showAbout');
+
       }
   }
 }
@@ -25,8 +26,10 @@ window.onclick = function(e) {
 window.onclick = function(e) {
   if (!e.target.matches('.dropbtn')) {
     const myDropdownContact = document.getElementById("myDropdownContact");
-      if (myDropdownContact.classList.contains('showContact')) {
+      if (myDropdownContact.classList.contains('showContact') ||
+          myDropdownAbout.classList.contains('showAbout')) {
         myDropdownContact.classList.remove('showContact');
+        myDropdownAbout.classList.remove('showAbout');
 
       }
   }
