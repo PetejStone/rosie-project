@@ -54,3 +54,9 @@ header {
   }
 
 }
+
+footer {
+  @extend %center;
+  text-align: center;
+  font-size: 12px;
+}

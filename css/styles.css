@@ -1,3 +1,6 @@
+footer {
+  margin: 0 auto; }
+
 .clearfix:before {
   content: " ";
   display: block;
@@ -38,7 +41,8 @@ html {
  * Remove the margin in all browsers (opinionated).
  */
 body {
-  margin: 0em 1em; }
+  margin: 0em 1em;
+  margin-top: 1em; }
 
 /**
  * Add the correct display in IE 9-.
@@ -478,6 +482,10 @@ header {
   .rosie-pics > a {
     margin: 3em;
     display: inline-block; }
+
+footer {
+  text-align: center;
+  font-size: 12px; }
 
 @keyframes pulse {
   0% {
