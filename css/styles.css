@@ -518,7 +518,8 @@ footer {
   max-width: 800px;
   transform: scale(0.7);
   margin-top: 2em;
-  margin-bottom: 2em; }
+  margin-bottom: 2em;
+  padding: 0; }
 
 @keyframes pulse {
   0% {
