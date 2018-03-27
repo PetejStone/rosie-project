@@ -501,8 +501,11 @@ header {
   justify-content: center;
   flex-wrap: wrap; }
   .rosie-pics > a {
-    margin: 3em;
+    margin: 1em;
     display: inline-block; }
+    @media (min-width: 800px) {
+      .rosie-pics > a {
+        margin: 3em; } }
 
 footer {
   text-align: center;

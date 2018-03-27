@@ -49,8 +49,11 @@ header {
   justify-content: center;
   flex-wrap: wrap;
   & > a {
-    margin: 3em;
+    margin: 1em;
     display: inline-block;
+    @include mq(medium) {
+      margin: 3em;
+    }
   }
 
 }
