@@ -38,7 +38,7 @@ html {
  * Remove the margin in all browsers (opinionated).
  */
 body {
-  margin: 0em; }
+  margin: 0em 1em; }
 
 /**
  * Add the correct display in IE 9-.
@@ -467,5 +467,37 @@ header {
 .showAbout,
 .showContact {
   display: block; }
+
+.rosie-pics {
+  max-width: 1000px;
+  margin: 0 auto;
+  /* width: 90%; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .rosie-pics > a {
+    margin: 3em;
+    display: inline-block; }
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    transition: transform ease-in-out;
+    box-shadow: 3px 5px 7px #000; }
+  50% {
+    transform: scale(1.1);
+    transition: transform ease-in-out;
+    box-shadow: 3px 5px 7px #000; }
+  100% {
+    transform: scale(1);
+    transition: transform ease-in-out;
+    box-shadow: 3px 5px 7px #000; } }
+.rosie-pic:hover {
+  animation: pulse .3s;
+  box-shadow: 3px 5px 7px #000;
+  z-index: 0; }
+
+.rosie-pic {
+  transition: box-shadow .2s ease-out; }
 
 /*# sourceMappingURL=styles.css.map */
