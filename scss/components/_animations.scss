@@ -38,3 +38,10 @@
     transform: scale(1.08) translateX(2%);
   }
 }
+
+footer > a > p {
+    transition: all .2s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }

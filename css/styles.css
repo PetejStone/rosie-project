@@ -414,10 +414,10 @@ nav > ul {
   flex-direction: row;
   justify-content: space-around;
   flex-direction: row-reverse;
+  padding-left: 0;
   margin: 0;
   background-color: #f2e6d9;
-  border-radius: 0px 0px 15px 15px;
-  font-family: "Lustria", serif, "Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif; }
+  border-radius: 0px 0px 15px 15px; }
 
 nav > li > a {
   font-size: 16px;
@@ -438,10 +438,26 @@ h1 {
   font-family: 'Amatic SC', 'Clicker Script', 'Jacques Francois Shadow', 'Rye', 'Sail', 'Stalemate', cursive; }
 
 p {
-  font-family: "Lustria", serif, "Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif; }
+  font-family: "Raleway", sans-serif, "Lustria", serif, "Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif; }
 
-footer > p {
-  font-family: 'Amatic SC', 'Clicker Script', 'Jacques Francois Shadow', 'Rye', 'Sail', 'Stalemate', cursive; }
+footer > a {
+  text-decoration: none;
+  color: #000; }
+  footer > a > p {
+    font-family: 'Amatic SC', 'Clicker Script', 'Jacques Francois Shadow', 'Rye', 'Sail', 'Stalemate', cursive;
+    display: inline-block;
+    transition: all .2s;
+    text-indent: 0px; }
+    footer > a > p:hover {
+      transform: scale(1.1); }
+
+.dropbtn {
+  font-family: "Raleway", sans-serif;
+  font-weight: 100; }
+
+.dropdown-content > a {
+  font-family: "Raleway", sans-serif;
+  font-size: 12px; }
 
 [class^=icon-] {
   display: block;
@@ -467,8 +483,7 @@ footer > p {
 .dropbtn {
   background: none;
   border: none;
-  font-size: 18px;
-  font-family: "Lustria", serif, "Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
+  font-size: 14px;
   outline: none;
   cursor: pointer; }
 
@@ -492,7 +507,8 @@ header {
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1; }
+  z-index: 1;
+  transform: translateX(-33%); }
 
 .dropdown-content a {
   float: none;
@@ -564,5 +580,10 @@ footer {
   .dropdown-content > a:hover,
   .dropbtn:hover {
     transform: scale(1.08) translateX(2%); }
+
+footer > a > p {
+  transition: all .2s; }
+  footer > a > p:hover {
+    transform: scale(1.1); }
 
 /*# sourceMappingURL=styles.css.map */
