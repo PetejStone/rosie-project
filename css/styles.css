@@ -440,6 +440,9 @@ h1 {
 p {
   font-family: "Lustria", serif, "Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif; }
 
+footer > p {
+  font-family: 'Amatic SC', 'Clicker Script', 'Jacques Francois Shadow', 'Rye', 'Sail', 'Stalemate', cursive; }
+
 [class^=icon-] {
   display: block;
   width: 25px;
