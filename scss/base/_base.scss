@@ -9,7 +9,14 @@ ul {
 
 body {
   background-color: lighten($main-color, 6%);
-  font-family: 'Amatic SC', 'Clicker Script', 'Jacques Francois Shadow',
-  'Rye', 'Sail', 'Stalemate', cursive;
-  
+
+}
+
+p {
+  @extend %center;
+  max-width: 1000px;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  text-indent: 32px;
+
 }

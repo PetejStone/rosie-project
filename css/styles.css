@@ -1,4 +1,4 @@
-footer, .social-nav {
+p, footer, .social-nav {
   margin: 0 auto; }
 
 .clearfix:before {
@@ -16,8 +16,13 @@ ul {
   list-style-type: none; }
 
 body {
-  background-color: #faf5f0;
-  font-family: 'Amatic SC', 'Clicker Script', 'Jacques Francois Shadow', 'Rye', 'Sail', 'Stalemate', cursive; }
+  background-color: #faf5f0; }
+
+p {
+  max-width: 1000px;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  text-indent: 32px; }
 
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -408,10 +413,11 @@ nav > ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-direction: row-reverse;
   margin: 0;
   background-color: #f2e6d9;
   border-radius: 0px 0px 15px 15px;
-  font-family: 'Amatic SC', 'Clicker Script', 'Jacques Francois Shadow', 'Rye', 'Sail', 'Stalemate', cursive; }
+  font-family: "Lustria", serif, "Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif; }
 
 nav > li > a {
   font-size: 16px;
@@ -428,7 +434,11 @@ header > p {
 
 h1 {
   margin-top: 2em;
-  text-align: center; }
+  text-align: center;
+  font-family: 'Amatic SC', 'Clicker Script', 'Jacques Francois Shadow', 'Rye', 'Sail', 'Stalemate', cursive; }
+
+p {
+  font-family: "Lustria", serif, "Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif; }
 
 [class^=icon-] {
   display: block;
@@ -455,7 +465,7 @@ h1 {
   background: none;
   border: none;
   font-size: 18px;
-  font-family: 'Amatic SC', 'Clicker Script', 'Jacques Francois Shadow', 'Rye', 'Sail', 'Stalemate', cursive;
+  font-family: "Lustria", serif, "Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
   outline: none;
   cursor: pointer; }
 
@@ -501,11 +511,14 @@ header {
   justify-content: center;
   flex-wrap: wrap; }
   .rosie-pics > a {
-    margin: 1em;
+    margin: 12px;
     display: inline-block; }
     @media (min-width: 800px) {
       .rosie-pics > a {
-        margin: 3em; } }
+        margin: 12px; } }
+    .rosie-pics > a > img {
+      width: 150px;
+      height: 150px; }
 
 footer {
   text-align: center;
