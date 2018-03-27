@@ -404,7 +404,6 @@ nav > ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  transform: translateY(22%);
   margin: 0;
   background-color: #f2e6d9;
   border-radius: 0px 0px 15px 15px;
@@ -441,9 +440,8 @@ header {
   background-repeat: no-repeat;
   background-position: 50% 13%;
   margin: 0 auto;
-  height: 142px;
   width: 90%;
-  border-radius: 15px 15px 0px 0px;
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
