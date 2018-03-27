@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  background-color: lighten($main-color, 6%);
+  font-family: 'Amatic SC';
+}

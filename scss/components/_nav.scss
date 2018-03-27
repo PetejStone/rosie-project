@@ -1,0 +1,17 @@
+nav > ul{
+  @include flexy(flex, row, null, space-around);
+  transform: translateY(22%);
+  margin: 0;
+  background-color: $main-color;
+  border-radius: 0px 0px 15px 15px;
+  font-family: 'Amatic SC', 'Clicker Script', 'Jacques Francois Shadow',
+  'Rye', 'Sail', 'Stalemate', cursive;
+}
+
+nav > li > a {
+    font-size: 16px;
+  
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
