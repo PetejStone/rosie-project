@@ -13,24 +13,25 @@ function showContact() {
 window.onclick = function(e) {
   if (!e.target.matches('.dropbtn')) {
     const myDropdownAbout = document.getElementById("myDropdownAbout");
-      if (myDropdownAbout.classList.contains('showAbout')) {
+      if (myDropdownAbout.classList.contains('showAbout') || myDropdownContact.classList.contains('showContact')) {
         myDropdownAbout.classList.remove('showAbout');
-
-      }
-  }
-}
-
-
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-    const myDropdownContact = document.getElementById("myDropdownContact");
-      if (myDropdownContact.classList.contains('showContact') ||
-          myDropdownAbout.classList.contains('showAbout')) {
         myDropdownContact.classList.remove('showContact');
-        myDropdownAbout.classList.remove('showAbout');
 
       }
   }
 }
+
+
+
+// // Close the dropdown if the user clicks outside of it
+// window.onclick = function(e) {
+//   if (!e.target.matches('.dropbtn')) {
+//     const myDropdownContact = document.getElementById("myDropdownContact");
+//       if (myDropdownContact.classList.contains('showContact') ||
+//           myDropdownAbout.classList.contains('showAbout')) {
+//         myDropdownContact.classList.remove('showContact');
+//         myDropdownAbout.classList.remove('showAbout');
+//
+//       }
+//   }
+// }

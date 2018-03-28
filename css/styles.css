@@ -614,7 +614,6 @@ footer > a > p {
 .contact-info {
   transition: all .3s; }
   .contact-info:hover {
-    color: #d1a87a;
     transform: scale(1.03); }
 
 #player,
