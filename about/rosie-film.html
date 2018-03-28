@@ -14,6 +14,16 @@
       <nav>
         <ul>
           <div class="dropdown">
+            <button class="dropbtn" onclick="showContact()">Contact
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdownContact">
+              <a href="../contact/contact.html">Contact Us</a>
+              <a href="../contact/connect.html">Connect</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
             <button class="dropbtn" onclick="showAbout()">About
             <i class="fa fa-caret-down"></i>
             </button>
@@ -26,16 +36,6 @@
           </div>
 
           <div class="dropdown">
-            <button class="dropbtn" onclick="showContact()">Contact
-            <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content" id="myDropdownContact">
-              <a href="../contact/contact.html">Contact Us</a>
-              <a href="../contact/connect.html">Connect</a>
-            </div>
-          </div>
-
-          <div class="dropdown">
             <button class="dropbtn" onclick="window.location.href='../index.html'">Home</button>
           </div>
         </ul>
@@ -44,9 +44,18 @@
 
     <h1>Rosie Film</h1>
 
+    <div class="video-list">
+      <div class="video-one">
+        <h3>The Job Interview</h3>
+        <div id="player"></div>
+      </div>
 
+      <div class="video-two">
+        <h3>The Comforter</h3>
+        <div id="player2"></div>
+      </div>
 
-
+    </div>
 
 
 
@@ -59,11 +68,12 @@
           <li><a class="icon-instagram" href="http://www.instagram.com/rosiesowngrams" target="_blank"></a></li>
           <li><a class="icon-youtube" href="http://www.youtube.com/rosiesownchannel" target="_blank"></a></li>
       </ul>
-      <a href="http://petejstone.github.io"><p>&copy; StoneSquare<sup>2</sup> Devlopment</p></a>
+      <a href="http://petejstone.github.io" target="_blank"><p>&copy; StoneSquare<sup>2</sup> Devlopment</p></a>
     </footer>
 
 
     <script src="../js/main.js"></script>
+    <script src="../js/video.js"></script>
   </body>
 
 </html>

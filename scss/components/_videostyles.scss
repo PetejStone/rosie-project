@@ -1,0 +1,17 @@
+
+#player,
+#player2 {
+  @extend %center;
+  display: block;
+  border-radius: 15px;
+  box-shadow: 5px 4px 10px darken($main-color, 30%);
+
+}
+
+.video-list {
+  @include flexy(flex, row, null, space-around) {
+    flex-wrap: wrap;
+  }
+  max-width: 1000px;
+  @extend %center;
+}
