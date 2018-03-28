@@ -50,8 +50,6 @@ footer > a > p {
   transition: all .3s;
   &:hover {
     color: darken($main-color, 25%);
-    
+    transform: scale(1.03);
   }
-
-
 }

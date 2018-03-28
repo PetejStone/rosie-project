@@ -67,6 +67,7 @@ footer {
   @extend %center;
   text-align: center;
   font-size: 12px;
+  margin-top: 5em;
 
 }
 
@@ -79,4 +80,12 @@ footer {
   margin-bottom: 2em;
   padding: 0;
 
+}
+
+.contact-info {
+  border: 1px solid $black;
+  border-radius: 5px;
+  padding: 3px;
+  background-color: $white;
+  box-shadow: -1px 3px 5px $black;
 }
