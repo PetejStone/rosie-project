@@ -45,3 +45,13 @@ footer > a > p {
       transform: scale(1.1);
     }
   }
+
+.contact-info {
+  transition: all .3s;
+  &:hover {
+    color: darken($main-color, 25%);
+    
+  }
+
+
+}

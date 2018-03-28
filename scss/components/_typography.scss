@@ -18,6 +18,7 @@ h1,h3 {
 p {
   font-family: $raleway-font-stack, $lustria-font-stack, $helvetica-font-stack, sans-serif;
   font-weight: $font-weight--thin;
+  text-align: center;
 }
 
 footer > a {
@@ -51,4 +52,11 @@ footer > a {
 .lb-caption {
   font-family: 'Amatic SC', 'Clicker Script', 'Jacques Francois Shadow',
   'Rye', 'Sail', 'Stalemate', cursive;
+}
+
+.contact-info {
+  text-decoration: none;
+  color: $black;
+  font-style: italic;
+
 }

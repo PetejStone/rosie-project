@@ -440,7 +440,8 @@ h1, h3 {
 
 p {
   font-family: "Raleway", sans-serif, "Lustria", serif, "Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
-  font-weight: 100; }
+  font-weight: 100;
+  text-align: center; }
 
 footer > a {
   text-decoration: none;
@@ -464,6 +465,11 @@ footer > a {
 .lb-data,
 .lb-caption {
   font-family: 'Amatic SC', 'Clicker Script', 'Jacques Francois Shadow', 'Rye', 'Sail', 'Stalemate', cursive; }
+
+.contact-info {
+  text-decoration: none;
+  color: #000;
+  font-style: italic; }
 
 [class^=icon-] {
   display: block;
@@ -591,6 +597,11 @@ footer > a > p {
   transition: all .2s; }
   footer > a > p:hover {
     transform: scale(1.1); }
+
+.contact-info {
+  transition: all .3s; }
+  .contact-info:hover {
+    color: #d1a87a; }
 
 #player,
 #player2 {
