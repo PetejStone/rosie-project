@@ -606,7 +606,7 @@ footer {
 footer > a > p {
   transition: all .2s; }
   footer > a > p:hover {
-    transform: scale(1.1); }
+    transform: scale(1.03); }
 
 .contact-info {
   transition: all .3s; }
