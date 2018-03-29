@@ -10,17 +10,7 @@ function showContact() {
 }
 
 
-//closes the dropdown when user touches outside of it (touchscreens)
-// window.addEventListener('touchstart', ()=> {
-//   if (!event.target.matches('.dropbtn')) {
-//     const myDropdownAbout = document.getElementById("myDropdownAbout");
-//       if (myDropdownAbout.classList.contains('showAbout') || myDropdownContact.classList.contains('showContact')) {
-//         myDropdownAbout.classList.remove('showAbout');
-//         myDropdownContact.classList.remove('showContact');
-//
-//       }
-//   }
-// })
+
 
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(e) {
@@ -32,7 +22,7 @@ window.onclick = function(e) {
 
       }
   }
-}
+};
 
 
 

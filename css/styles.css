@@ -410,7 +410,7 @@ template {
 [hidden] {
   display: none; }
 
-nav > ul {
+nav {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -494,9 +494,6 @@ footer > a {
 .icon-youtube {
   background-position: -82px 0; }
 
-.icon-instagram {
-  background-position: -41px 0; }
-
 .dropbtn {
   background: none;
   border: none;
@@ -515,8 +512,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 1400px;
-  padding-bottom: -18px; }
+  max-width: 1400px; }
 
 .dropdown-content {
   display: none;

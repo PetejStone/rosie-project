@@ -1,4 +1,4 @@
-nav > ul{
+nav {
   @include flexy(flex, row, null, space-around) {
     flex-direction: row-reverse;
   }
