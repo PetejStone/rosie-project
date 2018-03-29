@@ -538,7 +538,6 @@ header {
 .rosie-pics {
   max-width: 1000px;
   margin: 0 auto;
-  /* width: 90%; */
   display: flex;
   justify-content: center;
   flex-wrap: wrap; }
@@ -550,7 +549,9 @@ header {
         margin: 12px; } }
     .rosie-pics > a > img {
       width: 140px;
-      height: 140px; }
+      height: 140px;
+      box-shadow: 5px 4px 10px #cb9b67;
+      border-radius: 15px; }
 
 footer {
   text-align: center;

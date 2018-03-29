@@ -32,7 +32,7 @@ window.onclick = function(e) {
 
 // Close the dropdown if the user clicks outside of it
 document.body.addEventListener('touchstart', ()=>{
-  if (event.target.className === 'dropbtn' || event.target.parentElement === 'dropdown-content') {
+  if (event.target.className !== 'dropbtn' || event.target.parentElement !== 'dropdown-content') {
       if (myDropdownContact.classList.contains('showContact') ||
           myDropdownAbout.classList.contains('showAbout')) {
         myDropdownContact.classList.remove('showContact');
