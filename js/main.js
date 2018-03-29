@@ -1,5 +1,6 @@
 const myDropdownAbout = document.getElementById("myDropdownAbout");
 const myDropdownContact = document.getElementById("myDropdownContact");
+const button= document.querySelectorAll('button');
 
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
@@ -17,7 +18,8 @@ function showContact() {
 
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
+  console.log(event.target.parentElement)
+  if (event.target.className !== 'dropbtn') {
       if (myDropdownAbout.classList.contains('showAbout') || myDropdownContact.classList.contains('showContact')) {
         myDropdownAbout.classList.remove('showAbout');
         myDropdownContact.classList.remove('showContact');
@@ -30,8 +32,7 @@ window.onclick = function(e) {
 
 // Close the dropdown if the user clicks outside of it
 document.body.addEventListener('touchstart', ()=>{
-  if (!event.target.matches('.dropbtn')) {
-    const myDropdownContact = document.getElementById("myDropdownContact");
+  if (event.target.className === 'dropbtn' || event.target.parentElement === 'dropdown-content') {
       if (myDropdownContact.classList.contains('showContact') ||
           myDropdownAbout.classList.contains('showAbout')) {
         myDropdownContact.classList.remove('showContact');
