@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../../css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC%7CClicker+Script%7CJacques+Francois+Shadow%7CRye%7CSail%7CStalemate" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/lightbox.min.css">
@@ -15,35 +15,54 @@
       </div>
 
       <nav>
-          <div class="dropdown">
-            <button class="dropbtn" onclick="showContact()">Contact
-            <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content" id="myDropdownContact">
-              <a href="../contact/contact.html">Contact Us</a>
-              <a href="../contact/connect.html">Connect</a>
-            </div>
-          </div>
+        <ul>
+          <li><a class="dropbtn" href="../../index.html">Home</a></li>
 
-          <div class="dropdown">
-            <button class="dropbtn" onclick="showAbout()">About
-            <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content" id="myDropdownAbout">
-              <a href="who-is-rosie.html">Who is Rosie?</a>
-              <a href="rosie-and-the-posers.html">Rosie and the Posers</a>
-              <a href="rosie-film.html">Rosie Film</a>
-              <a href="rosie-art.html">Rosie Art</a>
-            </div>
-          </div>
+          <li  id="about"><p class="dropbtn">About</p>
+            <div class="dropdown about">
+              <div class="dropdown-content" id="myDropdownAbout">
 
-          <div class="dropdown">
-            <button class="dropbtn" onclick="window.location.href='../index.html'">Home</button>
-          </div>
+                <div  id="rosieFilm"><p class="dropbtn">Rosie Film</p>
+                  <div class="dropdown film">
+                    <div class="dropdown-content" id="myDropdownFilm">
+                      <a class="dropbtn" href="../rosie-film/costuming.html">Costuming</a>
+                      <a  class="dropbtn" href="../rosie-film/behind-the-scenes.html">Behind the Scenes</a>
+                      <a  class="dropbtn" href="../rosie-film/projects.html">Projects</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="rosieBand"><p class="dropbtn">Rosie Band</p>
+                  <div class="dropdown band">
+                    <div class="dropdown-content" id="myDropdownBand">
+                      <a class="dropbtn" href="../rosie-band/gallery.html">Gallery</a>
+                      <a class="dropbtn" href="../rosie-band/upcoming-dates.html">Upcoming Dates</a>
+                      <a class="dropbtn" href="../rosie-band/members.html">Members</a>
+                    </div>
+                  </div>
+
+                </div>
+
+
+                <a href="../rosie-writers/writers.html">Rosie Writers</a>
+              </div>
+            </div>
+          </li>
+
+          <li id="contact"><p class="dropbtn">Contact</p>
+            <div class="dropdown contact">
+              <div class="dropdown-content" id="myDropdownContact">
+                <a class="dropbtn" href="../../contact/contact.html">Contact Us</a>
+                <a class="dropbtn" href="../../contact/connect.html">Connect</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+
       </nav>
     </header>
 
-    <h1>Who is Rosie?</h1>
+    <h1>Writers</h1>
 
     <p>Lorem ipsum dolor sit amet, his voluptua atomorum te, errem equidem
       facilisis mei no. His nullam menandri mediocritatem et, vocibus adipiscing
@@ -85,11 +104,11 @@
       </footer>
 
 
-      <script src="../js/main.js"></script>
+      <script src="../../js/main.js"></script>
       <script src="https://code.jquery.com/jquery-3.2.1.min.js"
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
-        <script src="../js/lightbox.min.js"></script>
+        <script src="../../js/lightbox.min.js"></script>
 
   </body>
 

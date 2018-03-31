@@ -2,12 +2,14 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" type="text/css" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/lightbox.min.css">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC%7CClicker+Script%7CJacques+Francois+Shadow%7CRye%7CSail%7CStalemate" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Rosie and the Posers</title>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   </head>
   <body>
+
     <header id="header-placeholder">
       <div class="heading">
         <p class="title">Rosie's</p><p class="subtitle">Periodic Pub and Fiddle Club</p>
@@ -24,9 +26,9 @@
                 <div  id="rosieFilm"><p class="dropbtn">Rosie Film</p>
                   <div class="dropdown film">
                     <div class="dropdown-content" id="myDropdownFilm">
-                      <a class="dropbtn" href="../rosie-film/costuming">Costuming</a>
-                      <a  class="dropbtn"href="../rosie-film/behind-the-scenes">Behind the Scenes</a>
-                      <a  class="dropbtn" href="../rosie-film/projects">Projects</a>
+                      <a class="dropbtn" href="costuming.html">Costuming</a>
+                      <a  class="dropbtn" href="behind-the-scenes.html">Behind the Scenes</a>
+                      <a  class="dropbtn" href="projects.html">Projects</a>
                     </div>
                   </div>
                 </div>
@@ -34,16 +36,16 @@
                 <div id="rosieBand"><p class="dropbtn">Rosie Band</p>
                   <div class="dropdown band">
                     <div class="dropdown-content" id="myDropdownBand">
-                      <a class="dropbtn" href="gallery.html">Gallery</a>
-                      <a class="dropbtn" href="upcoming-dates.html">Upcoming Dates</a>
-                      <a class="dropbtn" href="members.html">Members</a>
+                      <a class="dropbtn" href="../rosie-band/gallery.html">Gallery</a>
+                      <a class="dropbtn" href="../rosie-band/upcoming-dates.html">Upcoming Dates</a>
+                      <a class="dropbtn" href="../rosie-band/members.html">Members</a>
                     </div>
                   </div>
 
                 </div>
 
 
-                <a href="../rosie-writers/writers/html">Rosie Writers</a>
+                <a href="../rosie-writers/writers.html">Rosie Writers</a>
               </div>
             </div>
           </li>
@@ -61,20 +63,31 @@
       </nav>
     </header>
 
-    <h1>Rosie Film</h1>
+    <h1>Costuming</h1>
 
-    <div class="video-list">
-      <div class="video-one">
-        <h3>The Job Interview</h3>
-        <div id="player"></div>
-      </div>
+    <p>Lorem ipsum dolor sit amet, his voluptua atomorum te, errem equidem
+      facilisis mei no. His nullam menandri mediocritatem et, vocibus adipiscing
+      id eum, nominati salutandi intellegebat ius no. Ad mei civibus molestiae
+      vulputate. Illud lorem inermis te vis. Eum fugit exerci liberavisse eu. </p>
+      <p>Nam magna partem regione an. Per errem sententiae an, qui dicant blandit adipiscing
+      ei, sit altera disputando no. Pri id feugiat dolorem, cum te fabulas
+      reprehendunt. At eum veri ludus. Eu vim option democritum.</p>
+    <div class="rosie-pics">
+      <a class="rosie-pic" data-lightbox="rosie" data-title="This is a gazebo" href="../../images/sample-one.jpg" ><img src="../../images/sample-one-thumbnail.jpg" alt=""  /></a>
+      <a class="rosie-pic" data-lightbox="rosie" data-title="This is a sunset in a garden" href="../../images/sample-two.jpg"><img src="../../images/sample-two-thumbnail.jpg" alt=""  /></a>
+      <a class="rosie-pic" data-lightbox="rosie" data-title="This is an alleyway next to hedges" href="../../images/sample-three.jpg"><img src="../../images/sample-three-thumbnail.jpg" alt=""  /></a>
+      <a class="rosie-pic" data-lightbox="rosie" data-title="This is a garden" href="../../images/sample-four.jpg"><img src="../../images/sample-four-thumbnail.jpg" alt=""  /></a>
+      <a class="rosie-pic" data-lightbox="rosie" data-title="This is a backyard on a sunny evening" href="../../images/sample-five.jpg"><img src="../../images/sample-five-thumbnail.jpg" alt=""  /></a>
+      <a class="rosie-pic" data-lightbox="rosie" data-title="This is a bench on a back patio" href="../../images/sample-six.jpg"><img src="../../images/sample-six-thumbnail.jpg" alt=""  /></a>
+      <a class="rosie-pic" data-lightbox="rosie" data-title="This is a bridge over a river in a park" href="../../images/sample-seven.jpg"><img src="../../images/sample-seven-thumbnail.jpg" alt=""  /></a>
+      <a class="rosie-pic" data-lightbox="rosie" data-title="This is the beach" href="../../images/sample-eight.jpg"><img src="../../images/sample-eight-thumbnail.jpg" alt=""  /></a>
+      <a class="rosie-pic" data-lightbox="rosie" data-title="This is a road" href="../../images/sample-nine.jpg"><img src="../../images/sample-nine-thumbnail.jpg" alt=""  /></a>
+      <a class="rosie-pic" data-lightbox="rosie" data-title="This is a railroad" href="../../images/sample-ten.jpg"><img src="../../images/sample-ten-thumbnail.jpg" alt=""  /></a>
 
-      <div class="video-two">
-        <h3>The Comforter</h3>
-        <div id="player2"></div>
-      </div>
 
     </div>
+
+
 
 
 
@@ -90,9 +103,12 @@
       <a href="http://petejstone.github.io" target="_blank"><p>&copy; StoneSquare<sup>2</sup> Devlopment</p></a>
     </footer>
 
-
     <script src="../../js/main.js"></script>
-    <script src="../../js/video.js"></script>
+
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+        <script src="../../js/lightbox.min.js"></script>
   </body>
 
 </html>
