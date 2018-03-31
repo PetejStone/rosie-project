@@ -426,12 +426,32 @@ nav > li > a {
   padding: 14px 16px;
   text-decoration: none; }
 
-header > p {
-  color: #fff;
-  font-size: 3em;
-  font-family: 'Amatic SC', 'Clicker Script', 'Jacques Francois Shadow', 'Rye', 'Sail', 'Stalemate', cursive;
-  text-align: center;
-  text-shadow: -1px 2px 3px #000; }
+header {
+  color: #fff; }
+  header > p {
+    color: #fff;
+    font-size: 3em;
+    font-family: 'Amatic SC', 'Clicker Script', 'Jacques Francois Shadow', 'Rye', 'Sail', 'Stalemate', cursive;
+    text-align: center;
+    text-shadow: -1px 2px 3px #000;
+    line-height: 0;
+    max-width: 100%;
+    margin: 0; }
+  header > .title {
+    margin: 0; }
+  header > span {
+    font-size: 12px; }
+
+.heading {
+  padding: 2em;
+  text-shadow: 1px 0px 0px #000; }
+  .heading > p {
+    margin: 0;
+    font-family: 'Amatic SC', 'Clicker Script', 'Jacques Francois Shadow', 'Rye', 'Sail', 'Stalemate', cursive; }
+  .heading > .title {
+    font-size: 4em; }
+  .heading > .subtitle {
+    font-size: 2em; }
 
 h1, h3 {
   margin-top: 2em;
