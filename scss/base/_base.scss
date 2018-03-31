@@ -14,9 +14,14 @@ body {
 
 p {
   @extend %center;
-  max-width: 1000px;
+
   margin-bottom: 1em;
   margin-top: 1em;
   text-indent: 32px;
 
+}
+
+a {
+  text-decoration: none;
+  color: $black; 
 }

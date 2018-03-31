@@ -14,31 +14,50 @@
       </div>
 
       <nav>
-          <div class="dropdown">
-            <button class="dropbtn" onclick="showContact()">Contact
-            <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content" id="myDropdownContact">
-              <a href="../contact/contact.html">Contact Us</a>
-              <a href="../contact/connect.html">Connect</a>
-            </div>
-          </div>
+        <ul>
+          <li><a class="dropbtn" href="../../index.html">Home</a></li>
 
-          <div class="dropdown">
-            <button class="dropbtn" onclick="showAbout()">About
-            <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content" id="myDropdownAbout">
-              <a href="who-is-rosie.html">Who is Rosie?</a>
-              <a href="rosie-and-the-posers.html">Rosie and the Posers</a>
-              <a href="rosie-film.html">Rosie Film</a>
-              <a href="rosie-art.html">Rosie Art</a>
-            </div>
-          </div>
+          <li  id="about"><p class="dropbtn">About</p>
+            <div class="dropdown about">
+              <div class="dropdown-content" id="myDropdownAbout">
 
-          <div class="dropdown">
-            <button class="dropbtn" onclick="window.location.href='../index.html'">Home</button>
-          </div>
+                <div  id="rosieFilm"><p class="dropbtn">Rosie Film</p>
+                  <div class="dropdown film">
+                    <div class="dropdown-content" id="myDropdownFilm">
+                      <a class="dropbtn" href="../rosie-film/costuming">Costuming</a>
+                      <a  class="dropbtn"href="../rosie-film/behind-the-scenes">Behind the Scenes</a>
+                      <a  class="dropbtn" href="../rosie-film/projects">Projects</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="rosieBand"><p class="dropbtn">Rosie Band</p>
+                  <div class="dropdown band">
+                    <div class="dropdown-content" id="myDropdownBand">
+                      <a class="dropbtn" href="gallery.html">Gallery</a>
+                      <a class="dropbtn" href="upcoming-dates.html">Upcoming Dates</a>
+                      <a class="dropbtn" href="members.html">Members</a>
+                    </div>
+                  </div>
+
+                </div>
+
+
+                <a href="../rosie-writers/writers/html">Rosie Writers</a>
+              </div>
+            </div>
+          </li>
+
+          <li id="contact"><p class="dropbtn">Contact</p>
+            <div class="dropdown contact">
+              <div class="dropdown-content" id="myDropdownContact">
+                <a class="dropbtn" href="../../contact/contact.html">Contact Us</a>
+                <a class="dropbtn" href="../../contact/connect.html">Connect</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+
       </nav>
     </header>
 

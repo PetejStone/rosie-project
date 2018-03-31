@@ -1,25 +1,57 @@
 const myDropdownAbout = document.getElementById("myDropdownAbout");
 const myDropdownContact = document.getElementById("myDropdownContact");
+const myDropDownFilm = document.getElementById("myDropdownFilm").classList.toggle("showFilm");
+const myDropDownBand = document.getElementById("myDropdownFilm").classList.toggle("showFilm");
 const button = document.querySelectorAll('button');
 const body = document.getElementsByTagName('body')[0];
+const rosieFilm = document.getElementById('rosieFilm');
+const rosieBand = document.getElementById('rosieBand');
+const about = document.getElementById('about');
+const contact = document.getElementById('contact');
+
 
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
-function showAbout() {
-    document.getElementById("myDropdownAbout").classList.toggle("showAbout");
-    myDropdownContact.classList.remove('showContact');
-}
-function showContact() {
-    document.getElementById("myDropdownContact").classList.toggle("showContact");
-    myDropdownAbout.classList.remove('showAbout');
-}
+about.addEventListener('click',()=> {
+  myDropdownAbout.classList.toggle("showAbout");
+  myDropdownContact.classList.remove('showContact');
+
+});
+
+
+contact.addEventListener('click',()=> {
+  myDropdownContact.classList.toggle("showContact");
+  myDropdownAbout.classList.remove('showAbout');
+});
+
+rosieFilm.addEventListener('click', ()=>{
+  myDropdownBand.classList.remove('showBand');
+  myDropdownFilm.classList.toggle("showFilm");
+  myDropdownAbout.classList.toggle("showAbout");
+
+});
+
+rosieBand.addEventListener('click',()=>{
+  myDropdownFilm.classList.remove('showFilm');
+  myDropdownBand.classList.toggle("showBand");
+  myDropdownAbout.classList.toggle("showAbout");
+});
+
+
+
+
+
+
+
+
+
 
 
 
 
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(e) {
-  console.log(event.target.parentElement)
+
   if (event.target === body || event.target.parentElement === body || event.target.parentElement.parentElement === body ) {
         myDropdownAbout.classList.remove('showAbout');
         myDropdownContact.classList.remove('showContact');

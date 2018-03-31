@@ -20,10 +20,13 @@ body {
   background-color: #faf5f0; }
 
 p {
-  max-width: 1000px;
   margin-bottom: 1em;
   margin-top: 1em;
   text-indent: 32px; }
+
+a {
+  text-decoration: none;
+  color: #000; }
 
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -419,12 +422,12 @@ nav {
   margin: 0;
   background-color: #f2e6d9;
   border-radius: 0px 0px 15px 15px; }
-
-nav > li > a {
-  font-size: 16px;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none; }
+  nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0; }
 
 header {
   color: #fff; }
@@ -453,6 +456,14 @@ header {
   .heading > .subtitle {
     font-size: 2em; }
 
+nav > ul {
+  font-family: "Raleway", sans-serif;
+  color: #000;
+  margin: 5px; }
+  nav > ul li p {
+    text-indent: 0px;
+    margin: 0; }
+
 h1, h3 {
   margin-top: 2em;
   text-align: center;
@@ -474,11 +485,15 @@ footer > a {
     footer > a > p:hover {
       transform: scale(1.1); }
 
+nav ul li,
 .dropbtn {
   font-family: "Raleway", sans-serif;
-  font-weight: 100; }
+  font-weight: 100;
+  font-size: 12px;
+  cursor: pointer; }
 
-.dropdown-content > a {
+.dropdown-content > a,
+.dropdown-content > p {
   font-family: "Raleway", sans-serif;
   font-size: 12px; }
 
@@ -495,6 +510,9 @@ footer > a {
   text-align: center;
   display: block;
   width: 300px; }
+
+.dropbtn {
+  font-family: "Raleway", sans-serif; }
 
 [class^=icon-] {
   display: block;
@@ -527,7 +545,7 @@ header {
   background-repeat: no-repeat;
   background-position: 50% 13%;
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -541,19 +559,31 @@ header {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  transform: translateX(-33%); }
+  transform: translate(-33%, 4%); }
 
-.dropdown-content a {
+.dropdown-content a,
+.dropdown-content p {
   float: none;
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  text-align: left; }
+  text-align: left;
+  text-indent: 0px;
+  font-size: 12px; }
 
 .showAbout,
-.showContact {
+.showContact,
+.showFilm,
+.showBand {
   display: block; }
+
+.showFilm {
+  transform: translate(79%, -33.4%);
+  float: none; }
+
+.showBand {
+  transform: translate(79%, -66.7%); }
 
 .rosie-pics {
   max-width: 1000px;
@@ -616,10 +646,8 @@ footer {
 .rosie-pic {
   transition: box-shadow .2s ease-out; }
 
-.dropdown-content > a,
 .dropbtn {
   transition: all .2s; }
-  .dropdown-content > a:hover,
   .dropbtn:hover {
     transform: scale(1.08) translateX(2%); }
 

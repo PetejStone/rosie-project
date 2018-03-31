@@ -1,7 +1,6 @@
 
 header {
   color: $white;
-
   & > p {
   color: $white;
   font-size: 3em;
@@ -22,6 +21,7 @@ header {
 
 }
 
+
 .heading {
   padding: 2em;
   text-shadow: 1px 0px 0px $black;
@@ -39,6 +39,17 @@ header {
   }
 }
 
+nav > ul {
+  font-family: $raleway-font-stack;
+  color: $black;
+  margin: 5px;
+
+  & li p {
+    text-indent: 0px;
+    margin:0;
+  }
+}
+
 h1,h3 {
   margin-top: 2em;
   text-align: center;
@@ -51,6 +62,8 @@ p {
   font-weight: $font-weight--thin;
   text-align: center;
 }
+
+
 
 footer > a {
   text-decoration: none;
@@ -68,13 +81,17 @@ footer > a {
 
 }
 
+nav ul li,
 .dropbtn {
   font-family: $raleway-font-stack;
   font-weight: $font-weight--thin;
+  font-size: 12px;
+  cursor: pointer;
 
 }
 
-.dropdown-content > a {
+.dropdown-content > a,
+.dropdown-content > p {
   font-family: $raleway-font-stack;
   font-size: 12px;
 }
@@ -96,4 +113,8 @@ footer > a {
   display: block;
   width: 300px;
 
+}
+
+.dropbtn {
+  font-family: $raleway-font-stack;
 }
