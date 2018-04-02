@@ -55,6 +55,8 @@ window.onclick = function(e) {
   if (event.target === body || event.target.parentElement === body || event.target.parentElement.parentElement === body ) {
         myDropdownAbout.classList.remove('showAbout');
         myDropdownContact.classList.remove('showContact');
+        myDropdownBand.classList.remove('showBand');
+        myDropdownFilm.classList.remove('showFilm');
 
       }
 
