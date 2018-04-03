@@ -69,6 +69,8 @@ document.body.addEventListener('touchstart', ()=>{
   if (event.target === body || event.target.parentElement === body || event.target.parentElement.parentElement === body ) {
         myDropdownContact.classList.remove('showContact');
         myDropdownAbout.classList.remove('showAbout');
+        myDropdownBand.classList.remove('showBand');
+        myDropdownFilm.classList.remove('showFilm');
 
       }
 
