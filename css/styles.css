@@ -19,6 +19,13 @@ ul {
 body {
   background-color: #faf5f0; }
 
+main {
+  min-height: 100vh; }
+
+footer {
+  position: relative;
+  bottom: 0px; }
+
 p {
   margin-bottom: 1em;
   margin-top: 1em; }

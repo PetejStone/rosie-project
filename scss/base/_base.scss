@@ -12,6 +12,15 @@ body {
 
 }
 
+main {
+  min-height: 100vh;
+}
+
+footer {
+  position: relative;
+  bottom: 0px;
+}
+
 p {
   @extend %center;
 
