@@ -5,5 +5,11 @@
   font-size: 14px;
   outline: none;
   cursor: pointer;
+  & span {
+    display: none;
+  }
+}
 
+.show {
+  display: block;
 }

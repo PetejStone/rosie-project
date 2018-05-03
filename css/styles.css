@@ -56,8 +56,7 @@ html {
  * Remove the margin in all browsers (opinionated).
  */
 body {
-  margin: 0em 1em;
-  margin-top: 1em; }
+  margin: 0; }
 
 /**
  * Add the correct display in IE 9-.
@@ -420,6 +419,7 @@ template {
   display: none; }
 
 nav {
+  transform: translateY(141px);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -433,7 +433,9 @@ nav {
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
-    padding: 0; }
+    padding: 0;
+    margin: 5px;
+    max-width: 1500px; }
 
 header {
   color: #fff; }
@@ -464,8 +466,7 @@ header {
 
 nav > ul {
   font-family: "Raleway", sans-serif;
-  color: #000;
-  margin: 5px; }
+  color: #000; }
   nav > ul li p {
     text-indent: 0px;
     margin: 0; }
@@ -544,6 +545,11 @@ nav ul li,
   font-size: 14px;
   outline: none;
   cursor: pointer; }
+  .dropbtn span {
+    display: none; }
+
+.show {
+  display: block; }
 
 header {
   background-image: url("../images/pnw3.jpg");
@@ -552,11 +558,11 @@ header {
   background-position: 50% 13%;
   margin: 0 auto;
   width: 100%;
-  border-radius: 15px;
+  height: 30em;
+  border-radius: 0px 0px 15px 15px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  max-width: 1400px; }
+  justify-content: center; }
 
 .dropdown-content {
   display: none;
@@ -566,6 +572,10 @@ header {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   transform: translate(-33%, 4%); }
+  .dropdown-content .showFilm {
+    box-shadow: 10px 8px 16px 0px rgba(0, 0, 0, 0.2); }
+  .dropdown-content .showBand {
+    box-shadow: 10px 8px 16px 0px rgba(0, 0, 0, 0.2); }
 
 .dropdown-content a,
 .dropdown-content p {

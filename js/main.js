@@ -28,6 +28,7 @@ rosieFilm.addEventListener('click', ()=>{
   myDropdownBand.classList.remove('showBand');
   myDropdownFilm.classList.toggle("showFilm");
   myDropdownAbout.classList.toggle("showAbout");
+  
 
 });
 
