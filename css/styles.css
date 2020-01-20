@@ -644,20 +644,17 @@ footer {
 @keyframes pulse {
   0% {
     transform: scale(1);
-    transition: transform ease-in-out;
-    box-shadow: 3px 5px 7px #000; }
+    transition: transform ease-in-out; }
   50% {
     transform: scale(1.1);
-    transition: transform ease-in-out;
-    box-shadow: 3px 5px 7px #000; }
+    transition: transform ease-in-out; }
   100% {
     transform: scale(1);
-    transition: transform ease-in-out;
-    box-shadow: 3px 5px 7px #000; } }
+    transition: transform ease-in-out; } }
 .rosie-pic:hover {
   animation: pulse .3s;
-  box-shadow: 3px 5px 7px #000;
-  z-index: 0; }
+  z-index: 0;
+  border-radius: 15px; }
 
 .rosie-pic {
   transition: box-shadow .2s ease-out; }
